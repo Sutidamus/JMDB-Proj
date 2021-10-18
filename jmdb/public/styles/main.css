@@ -257,12 +257,12 @@ body {
 
 .artistDiscoPicContainer{
     padding: 0;
-    margin:auto;
+    margin: auto;
     margin-left: 0.5em;
 }
 
 .artistDiscoAlbumInfo > h4 {
-    margin-bottom:0;
+    margin-bottom: 0;
 }
 /* .artistDiscoRow > .col {
     padding-right: 0;
