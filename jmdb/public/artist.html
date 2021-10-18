@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles/bootstrap-material-design.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>JMDB</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="profile.html"><h4 class="jmdbText">JMDB</h4></a>
+      <!-- <ul>
+        <li></li>
+      </ul> -->
+    </nav>
+    <main
+      id="albumMain"
+      class="container page-container justify-content-center"
+    >
+      <div id="albumEditHeader">
+        <button class="btn">EDIT</button>
+      </div>
+      <div id="albumHeader">
+        <div id="albumColLeft" class="albumCol">
+          <p>COLLECTION</p>
+          <button class="btn bmd-btn-fab">+</button>
+          <!-- <button class="btn bmd-btn-fab"><i class="fa-spotify"></i></button> -->
+        </div>
+        <div id="albumInfo"></div>
+        <img
+          id="albumPic"
+          src="https://i.scdn.co/image/ab6761610000e5eb34ec6da80ea2d64b48e54418"
+          alt="Smile by Eve"
+        />
+        <div id="albumDescription">
+          <h1 id="albumTitle">EVE</h1>
+        </div>
+        <div id="albumColRight" class="albumCol">
+          <p>WISHLIST</p>
+          <button class="btn bmd-btn-fab">+</button>
+        </div>
+      </div>
+      <div id="albumOtherInfo">
+        <p id="albumDetailDescription">
+          <span class="albumFieldWeight">Description: </span> Smile was a more
+          experimental album and featured Eve branching out delving into new
+          sounds and new styles in many of the..
+        </p>
+        <div id="artistDiscoShop" class="row">
+            <div class="col">
+                <p class="albumFieldWeight">Discography</p>
+                <div id="artistDisco" class="container row gx-5">
+                    <div class="col">
+                        <div class="row artistDiscoRow">
+                            <div class="col-2 artistDiscoPicContainer">
+                                <a href="album.html"><img class="artistDiscoAlbum" src="https://st.cdjapan.co.jp/pictures/l/00/42/TFCC-86703.jpg?v=3" alt=""></a>
+                            </div>
+                            <div class="artistDiscoAlbumInfo col">
+                                <h4>Smile</h3>
+                                <h5>2021</h4>
+                            </div>
+                        </div>
+
+                        <div class="row artistDiscoRow">
+                            <div class="col-2 artistDiscoPicContainer">
+                                <img class="artistDiscoAlbum" src="https://st.cdjapan.co.jp/pictures/l/00/42/TFCC-86703.jpg?v=3" alt="">
+                            </div>
+                            <div class="artistDiscoAlbumInfo col">
+                                <h4>Otogi</h3>
+                                <h5>2019</h4>
+                            </div>
+                        </div>
+
+                        <div class="row artistDiscoRow">
+                            <div class="col-2 artistDiscoPicContainer">
+                                <img class="artistDiscoAlbum" src="https://st.cdjapan.co.jp/pictures/l/00/42/TFCC-86703.jpg?v=3" alt="">
+                            </div>
+                            <div class="artistDiscoAlbumInfo col">
+                                <h4>Bunka</h3>
+                                <h5>2017</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col align-self-center text-center">
+                <button id="artistShopBtn" class="col-4 btn btn-primary">SHOP</button>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/popper.js"></script>
+    <script src="scripts/bootstrap-material-design.js"></script>
+    <script>
+      $("body").bootstrapMaterialDesign();
+    </script>
+    <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

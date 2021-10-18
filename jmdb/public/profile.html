@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+    </style> 
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>JMDB</title>
+</head>
+
+<body>
+  <nav>
+    <a href="profile.html"><h4 class="jmdbText">JMDB</h4></a> 
+      <!-- <ul>
+        <li></li>
+      </ul> -->
+  </nav>
+  <main id="profileMain" class="container page-container justify-content-center">
+      <div id="profileInfo">
+        <img src="evepic.png" alt="" id="profilePropic">
+        <div id="profileDescription"> 
+          <h1 id="profileUsername">SUTIDAMUS</h1>
+          <p id="profileJoinDate">JOINED: 10/02/21</p>
+          <p id="favSongText">Favorite Song:</p>
+          <p id="profileFavSong">Dramaturgy - Eve</p>
+          <button id="profileChangeSong" class="btn btn-primary">CHANGE SONG</button>
+        </div>
+      </div>
+      <hr>
+      <div id="profileAlbumCollection">
+        <h2 class="sectionHeader">ALBUM COLLECTION</h2>
+        <div id="profileCollectionFlex">
+          <div class="profileAlbum">
+            <a href="./album.html"><img class="profileAlbumPic" src="https://st.cdjapan.co.jp/pictures/l/00/42/TFCC-86703.jpg?v=3" alt=""></a>
+            <div class="profileAlbumInfo">
+              <p class="profileAlbumTitle">Smile</p>
+              <p class="profileAlbumArtist"><a href="artist.html">Eve</a></p>
+            </div>
+          </div>
+
+          <div class="profileAlbum">
+            <img class="profileAlbumPic" src="https://st.cdjapan.co.jp/pictures/l/00/42/TFCC-86703.jpg?v=3" alt="">
+            <div class="profileAlbumInfo">
+              <p class="profileAlbumTitle">Smile</p>
+              <p class="profileAlbumArtist">Eve</p>
+            </div>
+          </div>
+
+          <div class="profileAlbum">
+            <img class="profileAlbumPic" src="https://st.cdjapan.co.jp/pictures/l/00/42/TFCC-86703.jpg?v=3" alt="">
+            <div class="profileAlbumInfo">
+              <p class="profileAlbumTitle">Smile</p>
+              <p class="profileAlbumArtist">Eve</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div id="profileAlbumCollection">
+        <h2 class="sectionHeader">WISHLIST</h2>
+        <div id="profileCollectionFlex">
+          <div class="profileAlbum">
+            <img class="profileAlbumPic" src="https://st.cdjapan.co.jp/pictures/l/00/42/TFCC-86703.jpg?v=3" alt="">
+            <div class="profileAlbumInfo">
+              <p class="profileAlbumTitle">Smile</p>
+              <p class="profileAlbumArtist">Eve</p>
+            </div>
+          </div>
+
+          <div class="profileAlbum">
+            <img class="profileAlbumPic" src="https://st.cdjapan.co.jp/pictures/l/00/42/TFCC-86703.jpg?v=3" alt="">
+            <div class="profileAlbumInfo">
+              <p class="profileAlbumTitle">Smile</p>
+              <p class="profileAlbumArtist">Eve</p>
+            </div>
+          </div>
+
+          <div class="profileAlbum">
+            <img class="profileAlbumPic" src="https://st.cdjapan.co.jp/pictures/l/00/42/TFCC-86703.jpg?v=3" alt="">
+            <div class="profileAlbumInfo">
+              <p class="profileAlbumTitle">Smile</p>
+              <p class="profileAlbumArtist">Eve</p>
+            </div>
+          </div>
+        </div>
+  </main>
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

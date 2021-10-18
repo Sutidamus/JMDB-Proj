@@ -1,0 +1,282 @@
+body {
+  background: #089ac9;
+  font-weight: "Roboto";
+}
+
+.navbar {
+  background-color: #800000;
+  color: white;
+}
+
+.page-container {
+  margin-top: 75px;
+}
+
+.jmdbText {
+  font-family: "Rock Salt", cursive;
+  color: white;
+  text-align: center;
+}
+
+#loginMain {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  align-items: space-between;
+  justify-content: space-around;
+}
+
+#loginButton {
+  text-align: center;
+  margin: 5px auto;
+  flex-basis: 0;
+}
+
+#loginMain .btn-light.custom-file-control:before,
+.btn.btn-light {
+  background-color: rgb(177, 177, 177);
+}
+
+#jmdbLogin {
+  display: block;
+  font-size: 500%;
+}
+
+#profileMain {
+  background-color: aliceblue;
+  width: 100%;
+  margin: 2em auto;
+}
+
+#albumMain {
+    background-color: aliceblue;
+    width: 100%;
+    margin: 2em auto;
+    padding: 0;
+}
+#profileUsername {
+  font-family: "Roboto", sans;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+#profileJoinDate {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+#profileInfo {
+  display: grid;
+  grid-template: "pic desc";
+  grid-template-columns: 35% auto;
+  margin: auto;
+}
+
+#profilePropic {
+  grid-area: pic;
+  width: 100%;
+  border-radius: 100%;
+  border: #2898ff solid 2px;
+  margin: auto;
+  /* margin-left: 3em; */
+}
+
+#profileDescription {
+  grid-area: desc;
+  text-align: left;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+#profileChangeSong {
+  background-color: #5dc1e0;
+  color: white;
+}
+#favSongText {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+#profileFavSong {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#profileAlbumCollection {
+  text-align: center;
+}
+
+.sectionHeader {
+  margin-top: 0.8em;
+  font-weight: 450;
+}
+#profileCollectionFlex {
+  display: flex;
+  flex-basis: content;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+}
+
+#profileMain hr {
+  color: rgba(0, 0, 0 0.7);
+}
+.profileAlbumPic {
+  border-radius: 100%;
+  margin-bottom: 1.5em;
+  width: 80%;
+  box-shadow: 80;
+  filter: drop-shadow(3px 5px 1px rgba(0, 0, 0, 0.3));
+}
+
+.profileAlbumTitle {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.profileAlbumArtist {
+  margin-top: 0;
+  font-weight: 400;
+}
+.profileAlbum {
+  width: 30%;
+}
+
+#albumPic {
+  border-radius: 20%;
+  filter: drop-shadow(3px 5px 1px rgba(0, 0, 0, 0.3));
+}
+
+#albumHeader {
+  display: grid;
+  grid-template: "leftC album rightC";
+  grid-template-columns: auto 40% auto;
+}
+
+#albumPic {
+  width: 100%;
+  grid-area: album;
+}
+
+#albumDescription {
+  text-align: center;
+}
+
+#albumTitle {
+  color: #0099db;
+  font-weight: 500;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+}
+
+#albumArtist {
+  color: #656768;
+  font-weight: 450;
+}
+#albumColLeft {
+  grid-area: leftC;
+}
+
+.albumCol {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.albumCol > button {
+    margin: 0 auto;
+    background-color: #22A2FF;
+    color: white;
+
+}
+#albumOtherInfo {
+  font-size: 20pt;
+  font-weight: 200;
+  width: 90%;
+  margin: auto;
+}
+#albumColRight {
+  grid-area: rightC;
+}
+
+.albumFieldWeight {
+  font-weight: 400;
+}
+
+#albumShop {
+  background-color: #00a9de;
+  color: white;
+  font-size: 0.8em;
+}
+
+#albumCollectionAddBtn {
+  border-radius: 1
+  00%;
+}
+#albumEditHeader {
+    background-color: #56c3e4;
+    width: 100%;
+    margin-bottom:2em;
+    text-align: center;
+}
+
+#albumEditHeader > button {
+    color: white;
+    width: 100%
+}
+
+.artistDiscoAlbum {
+    width: 100%;
+}
+
+.artistDiscoRow {
+    background-color: #DFDFDF;
+}
+
+.artistDiscoAlbum {
+    border-radius: 100%;
+    width: 100%;
+    margin: auto;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.artistDiscoRow:nth-child(even){
+    background-color: #FFFFFF;
+}
+
+#artistDisco {
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+#artistShopBtn {
+    background-color: #00A9DE;
+    color: white;
+}
+
+.artistDiscoPicContainer{
+    padding: 0;
+    margin:auto;
+    margin-left: 0.5em;
+}
+
+.artistDiscoAlbumInfo > h4 {
+    margin-bottom:0;
+}
+/* .artistDiscoRow > .col {
+    padding-right: 0;
+    margin: auto;
+} */
+/* .artistDiscoAlbumInfo {
+    padding-right: 3em;
+} */
+/* #artistDiscoAndShop {
+    display: flex;
+} */
+/* #profilePropic {
+    float: left;
+} */
+/* body #loginMain {
+    background-color: #089AC9;
+} */
