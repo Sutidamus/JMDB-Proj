@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles/bootstrap-material-design.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>JMDB</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="profile.html"><h4 class="jmdbText">JMDB</h4></a>
+      <!-- <ul>
+        <li></li>
+      </ul> -->
+    </nav>
+    <main
+      id="profileMain"
+      class="container page-container justify-content-center"
+    >
+    <div class="btn-group btn-group-toggle text-center container justify-content-center" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> ARTIST
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> ALBUM
+      </label>
+    </div>
+
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="ex: Kenshi Yonezu"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Tags</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="ex: jpop, jmusic, pop, electric, funk"
+          />
+        </div>
+        <div class="row">
+          <div class="form-group col">
+            <label for="exampleCheck1" style="margin-left: 1em"
+              >Description</label
+            >
+            <textarea
+              type="textarea"
+              class="form-control"
+              id="exampleCheck1"
+            ></textarea>
+          </div>
+          <div class="col text-center">
+            <button id="entryUploadBtn" class="btn btn-primary mx-auto">UPLOAD IMAGE</button>
+          </div>
+        </div>
+        <div class="row justify-content-between w-90 p-3">
+          <button id="entrySubmitBtn" type="submit" class="btn btn-primary" style="background-color: #0099db; color: white;">Submit</button>
+        </div>
+        
+      </form>
+    </main>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/popper.js"></script>
+    <script src="scripts/bootstrap-material-design.js"></script>
+    <script>
+      $("body").bootstrapMaterialDesign();
+    </script>
+    <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

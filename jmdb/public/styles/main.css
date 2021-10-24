@@ -16,6 +16,8 @@ body {
   font-family: "Rock Salt", cursive;
   color: white;
   text-align: center;
+  font-size: 200%;
+  padding: 1em 0;
 }
 
 #loginMain {
@@ -46,13 +48,13 @@ body {
 #profileMain {
   background-color: aliceblue;
   width: 100%;
-  margin: 2em auto;
+  margin: 0 auto;
 }
 
 #albumMain {
     background-color: aliceblue;
     width: 100%;
-    margin: 2em auto;
+    margin: 0 auto;
     padding: 0;
 }
 #profileUsername {
@@ -126,16 +128,19 @@ body {
   width: 80%;
   box-shadow: 80;
   filter: drop-shadow(3px 5px 1px rgba(0, 0, 0, 0.3));
+  border: 2px solid #0099db;
 }
 
 .profileAlbumTitle {
   margin-bottom: 0;
   font-weight: 500;
+  color: #626c70;
 }
 
 .profileAlbumArtist {
   margin-top: 0;
   font-weight: 400;
+  color: #0099db;
 }
 .profileAlbum {
   width: 30%;
@@ -264,6 +269,59 @@ body {
 .artistDiscoAlbumInfo > h4 {
     margin-bottom: 0;
 }
+
+#entryUploadBtn {
+  display: block;
+  margin-top: 10%;
+  width: 100%;
+}
+
+main {
+  background-color: aliceblue;
+}
+#collectionMain img{
+  width: 100%;
+  padding: 0;
+  min-width: 100px;
+  max-width: 100px;
+}
+.collectionAlbumInfo {
+  display: flex;
+}
+
+.collectionAlbumText {
+  margin-left: 1em;
+}
+
+.collectionAlbumTitle{
+  color: #0079BD;
+  font-size: 120%;
+  font-weight: 500;
+}
+
+.collectionAlbumArtist {
+  font-size: 0.8em;
+  font-weight: 450;
+}
+
+.collectionWishListAdd,.collectionDel {
+  text-align: center;
+}
+.collectionAlbumText, .collectionAlbumTitle, .collectionAlbumArtist {
+  margin-bottom: 0;
+}
+
+main {
+  margin-top: 0;
+}
+
+#collectionMain {
+  margin-top: 0;
+}
+td{height:60px;}
+/* #collectionMain table button{
+  width: 50%;
+} */
 /* .artistDiscoRow > .col {
     padding-right: 0;
     margin: auto;
@@ -280,3 +338,23 @@ body {
 /* body #loginMain {
     background-color: #089AC9;
 } */
+
+#collectionFilterForm {
+  display: none;
+  /* transition: display 1s ; */
+}
+
+#collectionFilterBtnContainer {
+  text-align: left;
+  padding-top: 2em;
+}
+
+#collectionFilterBtnContainer > button {
+  background-color: #48a1d4;
+  color: white;
+}
+
+#collectionFilterBtn {
+  background-color: #0099db;
+  color: white;
+}

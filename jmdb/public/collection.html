@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles/bootstrap-material-design.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>JMDB</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="profile.html"><h4 class="jmdbText">JMDB</h4></a>
+      <!-- <ul>
+        <li></li>
+      </ul> -->
+    </nav>
+    <main
+      id="collectionMain"
+      class="container page-container justify-content-center"
+    >
+    <div id="collectionFilterBtnContainer">
+      <button class="btn btn-primary" id="collectionShowFilter" style="text-align: right;">Show Filter Options</button>
+    </div>
+
+    <form id="collectionFilterForm">
+      <div class="form-group" style="border-radius: 20px; background-color: white; box-shadow: 2px 2px 2px rgba(0,0,0,0.2);">
+        <label for="exampleInputEmail1">Title</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Bootleg" width="80">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Artist Name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Kenshi Yonezu">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Year</label>
+        <input type="number" class="form-control" min="1977" max="2021" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: 2017">
+      </div>
+      <button class="btn" id="collectionFilterBtn">Search</button>
+    </form>
+
+    <table id="collectionTable" class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col">TAGS</th>
+          <th scope="col">WISHLIST</th>
+          <th scope="col">COLLECTION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="collectionAlbumPic">
+            <img src="evepic.png" class="" alt="">
+          </td>
+          <td class="collectionAlbumText">
+            <div>
+              <p class="collectionAlbumTitle">Round Robin</p>
+              <p class="collectionAlbumArtist">Eve - 2015</p>
+            </div>
+          </td>
+          <td>Mark</td>
+          <td class="collectionWishListAdd">
+            <button class="collectionWishListAddBtn btn bmd-btn-fab btn-primary">+</button>
+          </td>
+          <td class="collectionDel">
+            <button class="collectionDelBtn btn bmd-btn-fab btn-warning" >-</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="collectionAlbumPic">
+            <img src="evepic.png" class="" alt="">
+          </td>
+          <td class="collectionAlbumText">
+            <div>
+              <p class="collectionAlbumTitle">Round Robin</p>
+              <p class="collectionAlbumArtist">Eve - 2015</p>
+            </div>
+          </td>
+          <td>Mark</td>
+          <td class="collectionWishListAdd">
+            <button class="collectionWishListAddBtn btn bmd-btn-fab btn-primary">+</button>
+          </td>
+          <td class="collectionDel">
+            <button class="collectionDelBtn btn bmd-btn-fab btn-warning" data-album="23">-</button>
+          </td>
+        </tr>
+        <!-- <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr> -->
+      </tbody>
+    </table>
+    </main>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/popper.js"></script>
+    <script src="scripts/bootstrap-material-design.js"></script>
+    <script>
+      $("body").bootstrapMaterialDesign();
+    </script>
+    <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
