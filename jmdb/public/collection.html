@@ -24,17 +24,33 @@
       <!-- <ul>
         <li></li>
       </ul> -->
+      <div class="row">
+        <a href="entry.html" class="col">ADD</a>
+        <a href="auction.html" class="col">AUCTION</a>
+        <a href="browse.html" class="col">BROWSE</a>
+        <a href="collection.html" class="col">MY ALBUMS</a>
+      </div>
+      
     </nav>
     <main
       id="collectionMain"
       class="container page-container justify-content-center"
     >
-    <div id="collectionFilterBtnContainer">
-      <button class="btn btn-primary" id="collectionShowFilter" style="text-align: right;">Show Filter Options</button>
+    <div class="text-center pt-4">
+      <h2 class="sectionHeader">MY ALBUMS</h2>
+    </div>
+    <div class="text-center py-4">
+      <label for="collectionWishlistFilter">Wishlist only?</label>
+      <input type="checkbox" id="collectionWishlistFilter">
     </div>
 
-    <form id="collectionFilterForm">
-      <div class="form-group" style="border-radius: 20px; background-color: white; box-shadow: 2px 2px 2px rgba(0,0,0,0.2);">
+    
+    <!-- <div id="collectionFilterBtnContainer">
+      <button class="btn btn-primary" id="collectionShowFilter" style="text-align: right;">Show Filter Options</button>
+    </div> -->
+
+    <!-- <form id="collectionFilterForm">
+      <div class="form-group">
         <label for="exampleInputEmail1">Title</label>
         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Bootleg" width="80">
       </div>
@@ -47,68 +63,22 @@
         <input type="number" class="form-control" min="1977" max="2021" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: 2017">
       </div>
       <button class="btn" id="collectionFilterBtn">Search</button>
-    </form>
+    </form> -->
 
-    <table id="collectionTable" class="table table-striped">
+    <table id="browseTable" class="table table-striped">
       <thead>
         <tr>
           <th scope="col"></th>
-          <th scope="col"></th>
-          <th scope="col">TAGS</th>
-          <th scope="col">WISHLIST</th>
-          <th scope="col">COLLECTION</th>
+          <th scope="col">TITLE</th>
+          <th scope="col">ARTIST</th>
+          <th scope="col" id="wishlistCont">WISHLIST</th>
+          <th scope="col" id="ownedCont">OWNED</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="collectionAlbumPic">
-            <img src="evepic.png" class="" alt="">
-          </td>
-          <td class="collectionAlbumText">
-            <div>
-              <p class="collectionAlbumTitle">Round Robin</p>
-              <p class="collectionAlbumArtist">Eve - 2015</p>
-            </div>
-          </td>
-          <td>Mark</td>
-          <td class="collectionWishListAdd">
-            <button class="collectionWishListAddBtn btn bmd-btn-fab btn-primary">+</button>
-          </td>
-          <td class="collectionDel">
-            <button class="collectionDelBtn btn bmd-btn-fab btn-warning" >-</button>
-          </td>
+          <td>Loading...</td>
         </tr>
-
-        <tr>
-          <td class="collectionAlbumPic">
-            <img src="evepic.png" class="" alt="">
-          </td>
-          <td class="collectionAlbumText">
-            <div>
-              <p class="collectionAlbumTitle">Round Robin</p>
-              <p class="collectionAlbumArtist">Eve - 2015</p>
-            </div>
-          </td>
-          <td>Mark</td>
-          <td class="collectionWishListAdd">
-            <button class="collectionWishListAddBtn btn bmd-btn-fab btn-primary">+</button>
-          </td>
-          <td class="collectionDel">
-            <button class="collectionDelBtn btn bmd-btn-fab btn-warning" data-album="23">-</button>
-          </td>
-        </tr>
-        <!-- <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr> -->
       </tbody>
     </table>
     </main>

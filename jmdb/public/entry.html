@@ -24,53 +24,122 @@
       <!-- <ul>
         <li></li>
       </ul> -->
+      <div class="row">
+        <a href="entry.html" class="col">ADD</a>
+        <a href="auction.html" class="col">AUCTION</a>
+        <a href="browse.html" class="col">BROWSE</a>
+        <a href="collection.html" class="col">MY ALBUMS</a>
+      </div>
+      
     </nav>
     <main
-      id="profileMain"
+      id="entryMain"
       class="container page-container justify-content-center"
     >
     <div class="btn-group btn-group-toggle text-center container justify-content-center" data-toggle="buttons">
-      <label class="btn btn-secondary active">
-        <input type="radio" name="options" id="option1" autocomplete="off" checked> ARTIST
+      <label class="btn btn-secondary " id="entryAlbumSelect" >
+        <input type="radio" name="options" id="option2" autocomplete="off" checked> ALBUM
       </label>
-      <label class="btn btn-secondary">
-        <input type="radio" name="options" id="option2" autocomplete="off"> ALBUM
+      <label class="btn btn-secondary active" id="entryArtistSelect">
+        <input type="radio" name="options" id="option1" autocomplete="off"> ARTIST
       </label>
     </div>
 
       <form>
         <div class="form-group">
-          <label for="exampleInputEmail1">Name</label>
+          <label for="formAlbumName">Name</label>
           <input
             type="text"
             class="form-control"
-            id="exampleInputEmail1"
+            id="formAlbumName"
+            aria-describedby="emailHelp"
+            placeholder="ex: Bootleg"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="formArtistName">Artist Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="formArtistName"
             aria-describedby="emailHelp"
             placeholder="ex: Kenshi Yonezu"
           />
         </div>
+
         <div class="form-group">
-          <label for="exampleInputPassword1">Tags</label>
+          <label for="formRelease">Release Date</label>
+          <input
+            type="date"
+            class="form-control"
+            id="formRelease"
+            aria-describedby="emailHelp"
+            placeholder="ex: Bootleg"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="formTags">Tags</label>
           <input
             type="text"
             class="form-control"
-            id="exampleInputPassword1"
+            id="formTags"
             placeholder="ex: jpop, jmusic, pop, electric, funk"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="formDuration">Duration (min)</label>
+          <input
+            type="number"
+            class="form-control"
+            id="formDuration"
+            aria-describedby="emailHelp"
+            placeholder="ex: 33"
+          />
+        </div>
+        <div class="form-group">
+          <label for="formImg">Image URL</label>
+          <input
+            type="text"
+            class="form-control"
+            id="formImg"
+            placeholder="ex: "
           />
         </div>
         <div class="row">
           <div class="form-group col">
-            <label for="exampleCheck1" style="margin-left: 1em"
+            <label for="formDescription" style="margin-left: 1em"
               >Description</label
             >
             <textarea
               type="textarea"
               class="form-control"
-              id="exampleCheck1"
+              id="formDescription"
             ></textarea>
           </div>
           <div class="col text-center">
-            <button id="entryUploadBtn" class="btn btn-primary mx-auto">UPLOAD IMAGE</button>
+            <div class="form-group">
+              <label for="formTags">Spotify Link</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formSpotify"
+                placeholder="ex: https://open.spotify.com/album/4QrPInjhEeNqhi4rDptpfP?si=2HiAf1MDQrqa7SkgI8Syvg"
+              />
+            </div>
+            <div class="form-group">
+              <label for="formID">Spotify ID</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formID"
+                placeholder="Import from Spotify to update"
+                disabled
+              />
+            </div>
+            <button id="entrySpotifyImportBtn" class="btn btn-primary mx-auto">IMPORT FROM SPOTIFY</button>
           </div>
         </div>
         <div class="row justify-content-between w-90 p-3">

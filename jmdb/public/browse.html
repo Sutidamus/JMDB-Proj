@@ -30,55 +30,49 @@
         <a href="browse.html" class="col">BROWSE</a>
         <a href="collection.html" class="col">MY ALBUMS</a>
       </div>
-      
     </nav>
     <main
-      id="albumMain"
+      id="browseMain"
       class="container page-container justify-content-center"
     >
-      <div id="albumEditHeader">
-        <a href="entry.html" id="albumEditBtn" ><button class="btn">EDIT</button></a>
+    <div class="text-center pt-4">
+      <h2 class="sectionHeader">BROWSE</h2>
+    </div>
+    
+    <!-- <div id="collectionFilterBtnContainer">
+      <button class="btn btn-primary" id="collectionShowFilter" style="text-align: right;">Show Filter Options</button>
+    </div> -->
+
+    <form id="collectionFilterForm">
+      <div class="form-group">
+        <label for="browseAlbumTitle">Title</label>
+        <input type="text" class="form-control" id="browseAlbumTitle" aria-describedby="emailHelp" placeholder="Ex: Bootleg" width="80">
       </div>
-      <div id="albumHeader">
-        <div id="albumColLeft" class="albumCol">
-          <p>COLLECT</p>
-          <button class="btn bmd-btn-fab">+</button>
-          <!-- <button class="btn bmd-btn-fab"><i class="fa-spotify"></i></button> -->
-        </div>
-        <div id="albumInfo"></div>
-        <img
-          id="albumPic"
-          src=""
-          alt=""
-        />
-        <div id="albumDescription">
-          <h1 id="albumTitle">Loading...</h1>
-          <h3 id="albumArtist"></h3>
-        </div>
-        <div id="albumColRight" class="albumCol">
-          <p>WISHLIST</p>
-          <button class="btn bmd-btn-fab">+</button>
-        </div>
+      <div class="form-group">
+        <label for="browseAlbumArtist">Artist Name</label>
+        <input type="text" class="form-control" id="browseAlbumArtist" aria-describedby="emailHelp" placeholder="Ex: Kenshi Yonezu">
       </div>
-      <div id="albumOtherInfo" class="pt-4">
-        <div class="row">
-          <p class="col" id="albumReleaseDate">
-            <span class="albumFieldWeight">Released: </span
-            ><span id="albumReleaseDateContent" style="font-weight: 200">...</span>
-          </p>
-          <button id="albumShop" class="btn btn-primary col-3">SHOP</button>
-        </div>
-        <p id="albumDetailDescription" class="pt-3">
-        </p>
-        <div id="albumTracklist">
-          <p class="albumFieldWeight"></p>
-          <!-- <ul>
-            <li class="albumSong"></li>
-            <li class="albumSong"></li>
-            <li class="albumSong"></li>
-          </ul> -->
-        </div>
+      <div class="form-group" style="display: none;">
+        <label for="browseAlbumDate">Year</label>
+        <input type="number" class="form-control" min="1977" max="2021" id="browseAlbumDate" aria-describedby="emailHelp" placeholder="Ex: 2017">
       </div>
+      <button class="btn" id="collectionFilterBtn">Search</button>
+      <button class="btn" id="collectionClrBtn">Clear Filters</button>
+    </form>
+
+    <table id="browseTable" class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">TITLE</th>
+          <th scope="col">ARTIST</th>
+          <th scope="col">YEAR</th>
+          <th scope="col">DURATION (M)</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
     </main>
 
     <script src="scripts/jquery.min.js"></script>

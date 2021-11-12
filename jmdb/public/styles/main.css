@@ -23,7 +23,6 @@ body {
 #loginMain {
   display: flex;
   flex-direction: column;
-
   height: 100vh;
   align-items: space-between;
   justify-content: space-around;
@@ -35,8 +34,7 @@ body {
   flex-basis: 0;
 }
 
-#loginMain .btn-light.custom-file-control:before,
-.btn.btn-light {
+#loginMain .btn-light.custom-file-control:before, .btn.btn-light {
   background-color: rgb(177, 177, 177);
 }
 
@@ -52,16 +50,26 @@ body {
 }
 
 #albumMain {
-    background-color: aliceblue;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
+  background-color: aliceblue;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
+
+nav div {
+  text-align: center;
+}
+
+nav div a, nav div a:visited {
+  color: white;
+}
+
 #profileUsername {
   font-family: "Roboto", sans;
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: 400;
 }
+
 #profileJoinDate {
   margin-top: 0;
   font-weight: 500;
@@ -88,22 +96,25 @@ body {
   text-align: left;
   margin-left: 2em;
   margin-top: 1em;
+  margin: auto;
 }
 
 #profileChangeSong {
   background-color: #5dc1e0;
   color: white;
 }
+
 #favSongText {
   margin-bottom: 0;
   font-weight: bold;
 }
+
 #profileFavSong {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-#profileAlbumCollection {
+#profileAlbumCollection, #profileWishlist {
   text-align: center;
 }
 
@@ -111,7 +122,8 @@ body {
   margin-top: 0.8em;
   font-weight: 450;
 }
-#profileCollectionFlex {
+
+#profileCollectionFlex, #profileWishlistFlex {
   display: flex;
   flex-basis: content;
   justify-content: space-around;
@@ -122,6 +134,7 @@ body {
 #profileMain hr {
   color: rgba(0, 0, 0 0.7);
 }
+
 .profileAlbumPic {
   border-radius: 100%;
   margin-bottom: 1.5em;
@@ -142,6 +155,7 @@ body {
   font-weight: 400;
   color: #0099db;
 }
+
 .profileAlbum {
   width: 30%;
 }
@@ -177,29 +191,31 @@ body {
   color: #656768;
   font-weight: 450;
 }
+
 #albumColLeft {
   grid-area: leftC;
 }
 
 .albumCol {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.albumCol > button {
-    margin: 0 auto;
-    background-color: #22A2FF;
-    color: white;
-
+.albumCol>button {
+  margin: 0 auto;
+  background-color: #22A2FF;
+  color: white;
 }
+
 #albumOtherInfo {
   font-size: 20pt;
   font-weight: 200;
   width: 90%;
   margin: auto;
 }
+
 #albumColRight {
   grid-area: rightC;
 }
@@ -215,76 +231,114 @@ body {
 }
 
 #albumCollectionAddBtn {
-  border-radius: 1
-  00%;
+  border-radius: 1 00%;
 }
+
 #albumEditHeader {
-    background-color: #56c3e4;
-    width: 100%;
-    margin-bottom:2em;
-    text-align: center;
+  background-color: #56c3e4;
+  width: 100%;
+  margin-bottom: 2em;
+  text-align: center;
 }
 
 #albumEditHeader > button {
-    color: white;
-    width: 100%
+  color: white;
+  width: 100%
+}
+
+#artistMain {
+  background-color: aliceblue;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.cardBody {
+  width: 100%;
+}
+
+#artistAudioPlayerCard img, #artistAudioPlayerCard audio {
+  width: 100%;
+}
+
+#audioPlayerImgContainer img {
+  width: 100%;
+}
+
+#artistAudioPlayerCard {
+  /* opacity: 0.5; */
+  background-color:#22A2FF;
+  color: white;
+  border-radius: 20px;
+
+  width: 80%;
+margin: auto;
 }
 
 .artistDiscoAlbum {
-    width: 100%;
+  width: 100%;
 }
 
 .artistDiscoRow {
-    background-color: #DFDFDF;
+  background-color: #DFDFDF;
 }
 
 .artistDiscoAlbum {
-    border-radius: 100%;
-    width: 100%;
-    margin: auto;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  width: 100%;
+  margin: auto;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
-.artistDiscoRow:nth-child(even){
-    background-color: #FFFFFF;
+.artistDiscoRow:nth-child(even) {
+  background-color: #FFFFFF;
 }
 
 #artistDisco {
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
-    padding: 0;
-    margin-bottom: 1em;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+  padding: 0;
+  margin-bottom: 1em;
 }
 
 #artistShopBtn {
-    background-color: #00A9DE;
-    color: white;
+  background-color: #00A9DE;
+  color: white;
 }
 
-.artistDiscoPicContainer{
-    padding: 0;
-    margin: auto;
-    margin-left: 0.5em;
+.artistDiscoPicContainer {
+  padding: 0;
+  margin: auto;
+  margin-left: 0.5em;
 }
 
-.artistDiscoAlbumInfo > h4 {
-    margin-bottom: 0;
+.artistDiscoAlbumInfo>h4 {
+  margin-bottom: 0;
 }
 
-#entryUploadBtn {
+#entrySpotifyImportBtn {
   display: block;
   margin-top: 10%;
   width: 100%;
 }
 
+#entryMain{
+  background-color: aliceblue;
+  width: 100%;
+  margin: 0 auto;
+  /* padding: 0; */
+}
+
 main {
   background-color: aliceblue;
 }
-#collectionMain img{
+
+#collectionMain img {
   width: 100%;
   padding: 0;
   min-width: 100px;
   max-width: 100px;
 }
+
 .collectionAlbumInfo {
   display: flex;
 }
@@ -293,7 +347,7 @@ main {
   margin-left: 1em;
 }
 
-.collectionAlbumTitle{
+.collectionAlbumTitle {
   color: #0079BD;
   font-size: 120%;
   font-weight: 500;
@@ -304,11 +358,18 @@ main {
   font-weight: 450;
 }
 
-.collectionWishListAdd,.collectionDel {
+.collectionWishListAdd, .collectionDel {
   text-align: center;
 }
+
 .collectionAlbumText, .collectionAlbumTitle, .collectionAlbumArtist {
   margin-bottom: 0;
+}
+
+
+.collectionWishListAddBtn{
+  background-color: #0099db;
+  color: white;
 }
 
 main {
@@ -318,29 +379,42 @@ main {
 #collectionMain {
   margin-top: 0;
 }
-td{height:60px;}
+
+td {
+  height: 60px;
+}
+
+
+#profileAuctionSearch {
+  display: none;
+}
 /* #collectionMain table button{
   width: 50%;
 } */
+
 /* .artistDiscoRow > .col {
     padding-right: 0;
     margin: auto;
 } */
+
 /* .artistDiscoAlbumInfo {
     padding-right: 3em;
 } */
+
 /* #artistDiscoAndShop {
     display: flex;
 } */
+
 /* #profilePropic {
     float: left;
 } */
+
 /* body #loginMain {
     background-color: #089AC9;
 } */
 
 #collectionFilterForm {
-  display: none;
+  /* display: none; */
   /* transition: display 1s ; */
 }
 
@@ -349,7 +423,7 @@ td{height:60px;}
   padding-top: 2em;
 }
 
-#collectionFilterBtnContainer > button {
+#collectionFilterBtnContainer>button {
   background-color: #48a1d4;
   color: white;
 }
@@ -357,4 +431,143 @@ td{height:60px;}
 #collectionFilterBtn {
   background-color: #0099db;
   color: white;
+}
+
+/*
+* Browse Page
+*
+*/
+#browseMain {
+  margin-top: 0;
+}
+
+#browseMain table img {
+  width: 100px;
+  
+}
+/*
+* Auction Page
+*
+*/
+
+#auctionHelp, #auctionNoResults {
+  min-height: 300px;
+  line-height: 309px;
+  font-size: 2em;
+}
+
+#auctionHelpText {
+  vertical-align: middle;
+}
+
+.auctionCardItemName {
+  text-align: left;
+  font-size: 1.5em;
+  color: #777;
+  font-weight: 450;
+}
+
+.auctionCardImage {
+  margin: 0.5em;
+  width: 100%;
+  padding: 0;
+  min-width: 100px;
+  max-width: 100px;
+}
+
+#auctionMain {
+  margin-top: 0;
+}
+
+#auctionMain [type='radio'] {
+  display: none;
+}
+
+.auctionSearchOption {
+  padding: 1em 0;
+  border: 2px white solid;
+  color: rgb(215, 241, 253);
+}
+
+#auctionMain .btn.btn-secondary.active {
+  background-color: green;
+}
+
+.auctionCard:nth-child(even){
+  background-color: #ffffff;
+}
+
+.auctionCard:nth-child(odd) .auctionCard{
+  background-color: aliceblue;
+}
+
+#profileMain .auctionCard:nth-child(odd){
+  background-color: aliceblue;
+}
+
+#profileMain #profileAuctionSearch a:visited{
+  color: white
+  
+}
+
+#profileMain #profileAuctionSearch a:visited{
+  color: white
+  
+}
+
+@media screen and (max-width: 450px) {
+  .collectionWishListDelBtn {
+    display: none;
+  }
+
+  .collectionDelBtn {
+    display: none;
+  }
+}
+
+/**
+PROFILE - DESKTOP CSS
+**/
+
+@media screen and (min-width: 768px)  {
+ 
+  #profileMain {
+    display: grid;
+    grid-template-areas:"info info" 
+                  "auc coll" 
+                  "auc wish";
+    grid-template-columns: 35% auto;
+  }
+
+  #profileAuctionSearch {
+   display: block;
+   grid-area: auc;
+   background-color: #56c3e4;
+   margin-top: 2em;
+ }
+
+ #profileAuctionSearch h3{
+  background-color: aliceblue;
+}
+ 
+ #profileAlbumCollection {
+   grid-area: coll;
+ }
+
+ #profileInfo{
+   grid-area: info;
+ }
+
+ #profileWishlist {
+   grid-area: wish;
+ }
+ #profilePropic {
+   margin: 0 30%;
+ }
+
+ #profileAddAlbums{
+   
+ }
+
+
 }

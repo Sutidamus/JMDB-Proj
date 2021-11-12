@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles/bootstrap-material-design.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>JMDB</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="profile.html"><h4 class="jmdbText">JMDB</h4></a>
+      <!-- <ul>
+        <li></li>
+      </ul> -->
+      <div class="row">
+        <a href="entry.html" class="col">ADD</a>
+        <a href="auction.html" class="col">AUCTION</a>
+        <a href="browse.html" class="col">BROWSE</a>
+        <a href="collection.html" class="col">MY ALBUMS</a>
+      </div>
+      
+    </nav>
+    <main
+      id="auctionMain"
+      class="container page-container justify-content-center"
+    >
+      <h2 class="text-center py-4">AUCTION SEARCH</h2>
+      <div class="text-center pb-4">
+        <button class="btn-sm btn" id="auctionSearchButton" style="background-color: #0099db; color: white; border-radius: 10px;"><i class="material-icons">search</i></button>
+        <input type="textbox" id="auctionSearchBar" style="display: inline; width: 80%;" />
+      </div>
+
+      <div class="btn-group btn-group-toggle m-auto row justify-content-center w-100 pb-1" data-toggle="buttons" id="auctionSearchEngine">
+        <label class="btn btn-secondary active col-6 col-sm-3 auctionSearchOption" style="background-color: #52add4; color:white;">
+          <input type="radio" name="options" id="optionRakuten" autocomplete="off" checked> Rakuten
+        </label>
+        <label class="btn btn-secondary col-6 col-sm-3 auctionSearchOption" style="background-color: #52add4; color:white;">
+          <input type="radio" name="options" id="optionYAuctions" autocomplete="off"> Y! Auctions
+        </label>
+        <label class="btn btn-secondary col-6 col-sm-3 auctionSearchOption" style="background-color: #52add4; color:white;">
+          <input type="radio" name="options" id="optionAmazon" autocomplete="off"> Amazon
+        </label>
+        <label class="btn btn-secondary col-6 col-sm-3 auctionSearchOption" style="background-color: #52add4; color:white;">
+          <input type="radio" name="options" id="optionCDJapan" autocomplete="off"> CDJapan
+        </label>
+      </div>
+
+
+      <div id="auctionResultsContainer" class="text-center text-muted" style="background-color: #ccebfd;">
+        <!-- <h3 class="pt-3" id="auctionHelpText">Type in search box to see results</h3> -->
+        <div id="auctionHelp">Type in the search box to see results</div>
+      </div>
+    </main>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/popper.js"></script>
+    <script src="scripts/bootstrap-material-design.js"></script>
+    <script>
+      $("body").bootstrapMaterialDesign();
+    </script>
+    <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="scripts/main.js" type="module"></script>
+  </body>
+</html>
